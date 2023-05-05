@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>get and set</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <style>
+        section{
+           border: 2px solid red;
+            width:50%;
+            height: 200px;
+            margin: 200px auto;
+            /* background-color: black; */
+            /* color: white; */
+            text-align: center;
+            /* align-items: center; */
+        }
+    </style>
+</head>
+<body>
+
+    <section>
+        <label>Updated the below paragraph:
+            <input type="search" id="input1">
+
+        </label>
+        <button type="button">Replace</button>
+        <br>
+        <div>
+            <p class="p1 p2" id="i1" name="nayan">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa id nulla ipsam, quos asperiores nesciunt impedit enim fugit optio esse, quidem quibusdam tempora sequi! Iste distinctio dolor quo vitae animi.</p>
+        </div>
+    </section>
+    <script>
+        $(document).ready(function(){
+
+            //here we get value on console
+            // let a=$("div").html();
+            // console.log(a);
+
+
+            //here we are set in div value
+            // a=$("div").html("hey nayan");
+
+            // let b=$("div p").text();
+            // console.log(b);
+
+            // b=$("div p").text("hey guys");
+
+            //value assign
+            // let c=$("div p").attr("class");
+            // c=$("div p").attr("name");
+            // console.log(c);
+
+            // c=$("div p").attr("align","justify");
+
+            
+            $("button").click(function (){
+                let result =$("#input1").val();   //here val() fetching value 
+                console.log("working",result);
+                $("div p").text(result);
+
+            })
+            $("input1").val("naresh");
+        
+        })
+
+
+
+    </script>
+</body>
+</html>

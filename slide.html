@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        div{
+
+            width: 50%;
+            height: 300px;
+            margin: 0px auto;
+            /* border:1px solid red; */
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        img{
+            width: 300px;
+            height: 300px;
+            /* position: relative; */
+        }
+        section{
+            background-image: linear-gradient(to bottom right,yellow,red,green,blue,pink);
+            width: 100%;
+            height: 900px;
+            
+        }
+        button{
+            width: 100px;
+            height: 70px;
+            background-image: linear-gradient(to bottom,yellow,red,green,blue,pink);
+            color: white;
+            font-size: x-large;
+            margin: 10px;
+            
+        }
+        #div1{
+            border: 10px double red;
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div id="div1">
+            <img src="mickey.png" alt="" id="img">
+        </div>
+
+        <div>
+            <button type="button" id="up">Slide-up</button>
+            <button type="button" id="down">Slide-down</button>
+            <button type="button" id="toggle">Slide-toggle</button>
+            <button type="button" id="stop">Stopper</button>
+        </div>
+
+        <script>
+            $(document).ready(function(){
+                $("#up").click(function (){
+                    $("img#img").slideUp(4000);
+                })
+                $("#down").click(function (){
+                    $("img#img").slideDown(4000);
+                })
+                $("#toggle").click(function (){
+                    $("img#img").slideToggle(4000);
+                })
+                $("#stop").click(function (){
+                    $("img#img").stop();
+                })
+
+            })
+        </script>
+    </section>
+</body>
+</html>

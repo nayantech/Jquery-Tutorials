@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Selector</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+</head>
+<body>
+    
+    <!-- <script src="jquery.js"></script> -->  
+    <!-- for offline attached file link -->
+
+    <section>
+        <div class="div1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et adipisci quasi quo dolorem ipsa labore atque commodi fuga architecto, dolorum inventore facere cupiditate nobis. Reprehenderit possimus beatae numquam laboriosam accusantium.</div>
+        <div id="div2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero tenetur consequatur quam laborum architecto! Quod autem mollitia ex quis obcaecati libero facere soluta ipsa fugit praesentium voluptates iste, nesciunt reiciendis exercitationem incidunt commodi quas at saepe itaque facilis ea officiis. In nesciunt officia minima voluptatibus ad eligendi inventore alias quas?</div>
+        <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic numquam, magnam exercitationem quia tenetur officiis, mollitia fuga, veritatis id enim cum at sint! Vitae magni tenetur incidunt nesciunt temporibus illum.</div>
+        <div></div>
+    </section>
+    <script>
+        $(document).ready(function(){
+            // alert("ready to run")
+            
+            //1st way by tag name
+            // $("section").css("background-color","blue");
+
+            //2nd way by tag name
+            // let a=$("section")
+            // a.css("background-color","green");
+
+            //1st way by class and id selector
+            // $("div.div1").css("color","cyan");
+            // $("div#div2").css("color","pink");
+            // $("div").css("color","blue");
+
+            //by descendent selector
+            // $("section div").css("text-decoration","underline");
+
+            //by universal selector
+            // $("*").css("text-align","center");
+
+            
+
+            // $("div:eq(1)").css("color","yellow");   //here eq mean equal to 1 index here index start from 0("zero")
+            // $("div:lt(2)").css("color","pink");     //here lt mean less than 2 
+            // $("div:gt(0)").css("color","red");      //here gt mean greater than 0
+
+            // $("div:even").css("color","green");
+            // $("div:odd").css("color","red");
+
+
+
+            // $("section div:last-child").css("text-align","center");
+            // $("section div:nth-of-type(2)").css("text-align","center");
+            
+
+            // $("div:first").css("color","orange");
+            
+            // $("div:last").css("color","green");
+
+
+
+            //select by object
+            // $("div").css({
+            //     "width":"auto",
+            //     "height":"100px",
+            //     "border":"5px double green"
+            // })
+
+            // $("div:empty").css({
+            //     "width":"auto",
+            //     "height":"100px",
+            //     "border":"5px double green"
+            // })
+
+        });
+    </script>
+</body>
+</html>

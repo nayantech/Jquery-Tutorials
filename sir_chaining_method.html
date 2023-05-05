@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sir Chaining method</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <style>
+
+    </style>
+</head>
+<body>
+    <img src="car.png" id="img1" width="100px" alt="">
+
+    <script>
+        $(document).ready(function (){
+            $("#img1").fadeOut(3000).fadeIn(3000).css({"transform":"rotateY(180deg) translateX(-200px)"})
+        })
+    </script>
+</body>
+</html>
